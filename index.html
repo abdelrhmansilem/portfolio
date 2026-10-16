@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdelrhman Salim — CyberSecurity & Software Engineering Student, Bug Bounty Hunter at HackerOne, Bugcrowd & Private Programs. Portfolio landing page." />
+  <meta name="author" content="Abdelrhman Salim" />
+  <meta name="keywords" content="CyberSecurity, Bug Bounty, HackerOne, Bugcrowd, Pentesting, OWASP, PortSwigger, HackTheBox, TryHackMe" />
+  <meta name="theme-color" content="#f8f7f3" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>Abdelrhman Salim — CyberSecurity Student & Bug Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;1,600&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = t;
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m) m.setAttribute('content', t === 'dark' ? '#0e1412' : '#f8f7f3');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= ANIMATED BACKGROUND ================= -->
+  <div class="bg-fx" aria-hidden="true">
+    <canvas id="bg-canvas"></canvas>
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="mote" style="--x:6%;  --s:3px; --t:30s; --dl:-3s"></span>
+    <span class="mote gold" style="--x:15%; --s:2px; --t:38s; --dl:-18s"></span>
+    <span class="mote" style="--x:24%; --s:2px; --t:26s; --dl:-9s"></span>
+    <span class="mote" style="--x:34%; --s:3px; --t:44s; --dl:-30s"></span>
+    <span class="mote gold" style="--x:44%; --s:2px; --t:32s; --dl:-12s"></span>
+    <span class="mote" style="--x:53%; --s:2px; --t:36s; --dl:-6s"></span>
+    <span class="mote gold" style="--x:62%; --s:3px; --t:42s; --dl:-24s"></span>
+    <span class="mote" style="--x:71%; --s:2px; --t:28s; --dl:-15s"></span>
+    <span class="mote" style="--x:80%; --s:3px; --t:48s; --dl:-34s"></span>
+    <span class="mote gold" style="--x:88%; --s:2px; --t:34s; --dl:-8s"></span>
+    <span class="mote" style="--x:94%; --s:2px; --t:40s; --dl:-20s"></span>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">&lt;<span class="logo-accent">silem</span> /&gt;</a>
+      <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#practice">Practice</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-sm btn-outline nav-cta">Hire Me</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch between light and dark mode" title="Switch theme">
+        <svg class="t-ico t-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="t-ico t-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <input type="checkbox" id="nav-toggle" class="nav-check" />
+      <label for="nav-toggle" class="burger" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#practice">Practice</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+
+      <div class="hero-text">
+        <p class="hero-badge">// Welcome to my portfolio</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="accent">Abdelrhman<br />Salim</span>
+        </h1>
+        <h2 class="hero-roles">
+          <span class="role fixed-role">CyberSecurity Student</span>
+          <span class="typing-anim">
+            <span>Software Engineering Student</span>
+            <span>Bug Bounty Hunter</span>
+            <span>Problem Solver</span>
+            <span>CyberSecurity Student</span>
+          </span>
+          <span class="caret">▍</span>
+        </h2>
+        <p class="hero-desc">
+          A 19-year-old Computer &amp; Information student at Suez Canal University,
+          hunting bugs on HackerOne, Bugcrowd &amp; private programs — and building
+          software with multiple programming languages.
+        </p>
+
+        <div class="hero-socials">
+          <a href="https://github.com/abdelrhmansleem998-sketch" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.13-.02-2.05-3.2.7-3.88-1.36-3.88-1.36-.53-1.32-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.38 2.9-.39.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.05.78 2.12 0 1.54-.01 2.77-.01 3.15 0 .31.21.68.8.56C20.22 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/abdelrhman-silem-61050a384/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://x.com/SilemAbdelrhman" target="_blank" rel="noopener" class="social-btn" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.24 2.25H8.1l4.71 6.23 5.43-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg>
+          </a>
+          <a href="https://medium.com/@abdelrhmansleem998" target="_blank" rel="noopener" class="social-btn" aria-label="Medium">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M13.54 12A6.77 6.77 0 0 1 6.77 18.77 6.77 6.77 0 0 1 6.77 5.23 6.77 6.77 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.39 6.42-1.88 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.39 2.88 3.39 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75S24 8.83 24 12z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get In Touch →</a>
+          <a href="#about" class="btn btn-outline">More About Me</a>
+        </div>
+      </div>
+
+      <!-- Terminal card -->
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">abdelrhman@kali: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">➜</span> <span class="cmd">whoami</span></p>
+          <p class="output">abdelrhman_silem</p>
+
+          <p><span class="prompt">➜</span> <span class="cmd">cat profile.txt</span></p>
+          <p class="output">Name&nbsp;&nbsp;&nbsp;: Abdelrhman Salim</p>
+          <p class="output">Role&nbsp;&nbsp;&nbsp;: CyberSecurity &amp; Software Eng. Student</p>
+          <p class="output">Email&nbsp;&nbsp;: <a href="mailto:abdelrhmansleem998@gmail.com">abdelrhmansleem998@gmail.com</a></p>
+
+          <p><span class="prompt">➜</span> <span class="cmd">cat targets.txt</span></p>
+          <p class="output">[+] HackerOne</p>
+          <p class="output">[+] Bugcrowd</p>
+          <p class="output">[+] Private Programs</p>
+
+          <p><span class="prompt">➜</span> <span class="cmd">nmap --skills</span></p>
+          <p class="output status">Status: <span class="blink">Hunting bugs... ▌</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">#</span> About Me</h2>
+      <p class="section-sub">Quick facts about who I am and what I do.</p>
+
+      <div class="about-grid">
+        <div class="profile-card glass">
+          <div class="profile-banner">
+            <img src="me.jpeg" alt="Abdelrhman Salim" />
+          </div>
+          <img class="avatar" src="me-head.jpg" alt="Abdelrhman Salim" />
+          <h3>Abdelrhman Salim <span class="verified">✔</span></h3>
+          <p class="profile-tag">CyberSecurity Student · Bug Bounty Hunter</p>
+
+          <ul class="info-list">
+            <li><span class="key">Age</span><span class="val">19 Years Old</span></li>
+            <li><span class="key">Country</span><span class="val">Egypt 🇪🇬</span></li>
+            <li><span class="key">University</span><span class="val">Suez Canal University</span></li>
+            <li><span class="key">College</span><span class="val">Computer &amp; Information</span></li>
+            <li><span class="key">Level</span><span class="val">2nd Level</span></li>
+            <li><span class="key">GPA</span><span class="val">2.25</span></li>
+          </ul>
+        </div>
+
+        <div class="about-content">
+          <div class="about-card glass">
+            <div class="icon-box">🎓</div>
+            <h3>Education</h3>
+            <p>
+              2nd-level student at the Faculty of Computer &amp; Information —
+              Suez Canal University, focusing on
+              <strong>CyberSecurity</strong> and <strong>Software Engineering</strong>.
+            </p>
+          </div>
+
+          <div class="about-card glass">
+            <div class="icon-box">🛡️</div>
+            <h3>Bug Bounty</h3>
+            <p>
+              Active bug bounty hunter on <strong>HackerOne</strong>, <strong>Bugcrowd</strong>
+              and <strong>Private Programs</strong>. Known for writing
+              <strong>clear, high-quality reports</strong> 💯.
+            </p>
+          </div>
+
+          <div class="about-card glass">
+            <div class="icon-box">💻</div>
+            <h3>Problem Solving</h3>
+            <p>
+              Competed in <strong>ICPC</strong> (Problem Solving). I love breaking down
+              hard problems into clean, efficient solutions.
+            </p>
+          </div>
+
+          <div class="about-card glass">
+            <div class="icon-box">🚀</div>
+            <h3>Self Development</h3>
+            <p>
+              Improving my <strong>English</strong>, <strong>Soft Skills</strong>,
+              <strong>AI</strong> and more — investing daily in becoming a better version of myself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">#</span> Skills</h2>
+      <p class="section-sub">Programming, security expertise and soft skills I use every day.</p>
+
+      <h3 class="skill-group-title">⚡ Programming Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-lang glass">
+          <span class="lang-logo"><img src="icons/cpp.svg" alt="C++ logo" loading="lazy" /></span>
+          <p class="lang-name">C++</p>
+          <p class="lang-use">Problem Solving · ICPC</p>
+        </div>
+        <div class="skill-lang glass">
+          <span class="lang-logo"><img src="icons/java.svg" alt="Java logo" loading="lazy" /></span>
+          <p class="lang-name">Java</p>
+          <p class="lang-use">OOP · Applications</p>
+        </div>
+        <div class="skill-lang glass">
+          <span class="lang-logo"><img src="icons/javascript.svg" alt="JavaScript logo" loading="lazy" /></span>
+          <p class="lang-name">JavaScript</p>
+          <p class="lang-use">Web · XSS Recon</p>
+        </div>
+        <div class="skill-lang glass">
+          <span class="lang-logo"><img src="icons/python.svg" alt="Python logo" loading="lazy" /></span>
+          <p class="lang-name">Python</p>
+          <p class="lang-use">Automation · Scripting</p>
+        </div>
+        <div class="skill-lang glass">
+          <span class="lang-logo"><img src="icons/bash.svg" alt="Bash logo" loading="lazy" /></span>
+          <p class="lang-name">Bash</p>
+          <p class="lang-use">Linux · Automation</p>
+        </div>
+        <div class="skill-lang glass">
+          <span class="lang-logo"><img src="icons/c.svg" alt="C logo" loading="lazy" /></span>
+          <p class="lang-name">C</p>
+          <p class="lang-use">Fundamentals · Memory</p>
+        </div>
+      </div>
+
+      <h3 class="skill-group-title">🛡️ Security Skills</h3>
+      <div class="sec-chips">
+        <span class="chip">Web App Pentesting</span>
+        <span class="chip">OWASP Top 10</span>
+        <span class="chip">OSINT</span>
+        <span class="chip">Network</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Database</span>
+        <span class="chip">Logic Vulns</span>
+        <span class="chip highlight">Quality Reporting</span>
+      </div>
+
+      <h3 class="skill-group-title">🧠 Soft Skills &amp; More</h3>
+      <div class="sec-chips">
+        <span class="chip soft">English (Improving)</span>
+        <span class="chip soft">AI</span>
+        <span class="chip soft">Communication</span>
+        <span class="chip soft">Problem Solving</span>
+        <span class="chip soft">Teamwork</span>
+        <span class="chip soft">Time Management</span>
+        <span class="chip soft">Self Learning</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRACTICE ================= -->
+  <section id="practice" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">#</span> Learning &amp; Practice</h2>
+      <p class="section-sub">Platforms where I train, practice CTFs and sharpen my skills.</p>
+
+      <div class="practice-grid">
+        <div class="practice-card glass">
+          <div class="practice-head">
+            <span class="platform-icon tryhackme"><img src="icons/tryhackme.ico" alt="TryHackMe" /></span>
+            <span class="status-tag studying">Currently Studying</span>
+          </div>
+          <h3>TryHackMe</h3>
+          <p>Learning step by step with guided paths, rooms and labs across the whole attack &amp; defense surface.</p>
+          <div class="progress"><span style="--w: 60%"></span></div>
+        </div>
+
+        <div class="practice-card glass">
+          <div class="practice-head">
+            <span class="platform-icon portswigger"><img src="icons/portswigger.ico" alt="PortSwigger" /></span>
+            <span class="status-tag solving">Solving Labs</span>
+          </div>
+          <h3>PortSwigger Labs</h3>
+          <p>Practicing Web Security Academy labs — OWASP Top 10 vulnerabilities, logic flaws and more.</p>
+          <div class="progress"><span style="--w: 65%"></span></div>
+        </div>
+
+        <div class="practice-card glass">
+          <div class="practice-head">
+            <span class="platform-icon hackthebox"><img src="icons/hackthebox.ico" alt="HackTheBox" /></span>
+            <span class="status-tag ctf">CTFs</span>
+          </div>
+          <h3>HackTheBox</h3>
+          <p>Solving CTF challenges and pushing my hacking skills to the next level in a real-world style lab.</p>
+          <div class="progress"><span style="--w: 70%"></span></div>
+        </div>
+
+        <div class="practice-card glass">
+          <div class="practice-head">
+            <span class="platform-icon icpc"><img src="icons/icpc.ico" alt="ICPC" /></span>
+            <span class="status-tag done">Achievement</span>
+          </div>
+          <h3>ICPC — Problem Solving</h3>
+          <p>Participated in the International Collegiate Programming Contest, solving problems under real pressure.</p>
+          <div class="progress"><span style="--w: 100%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-wrap">
+      <h2 class="section-title"><span class="accent">#</span> Contact Me</h2>
+      <p class="section-sub">Want to collaborate, report to a private program, or just say hi?</p>
+
+      <p class="contact-line glass">
+        <span class="cmd-line"><span class="prompt">➜</span> <span class="cmd">./connect.sh</span></span>
+        <span class="comment">// Open source → my profiles ↓</span>
+      </p>
+
+      <a href="mailto:abdelrhmansleem998@gmail.com" class="email-line glass">
+        <span class="email-label">Email</span>
+        <span class="email-addr">abdelrhmansleem998@gmail.com</span>
+        <span class="email-arrow">→</span>
+      </a>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/abdelrhman-silem-61050a384/" target="_blank" rel="noopener" class="contact-card glass">
+          <span class="c-icon li"><img src="icons/linkedin.svg" alt="" /></span>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>abdelrhman-silem</p>
+          </div>
+        </a>
+        <a href="https://x.com/SilemAbdelrhman" target="_blank" rel="noopener" class="contact-card glass">
+          <span class="c-icon x"><img src="icons/x.svg" alt="" /></span>
+          <div>
+            <h4>X / Twitter</h4>
+            <p>@SilemAbdelrhman</p>
+          </div>
+        </a>
+        <a href="https://github.com/abdelrhmansleem998-sketch" target="_blank" rel="noopener" class="contact-card glass">
+          <span class="c-icon gh"><img src="icons/github.svg" alt="" /></span>
+          <div>
+            <h4>GitHub</h4>
+            <p>abdelrhmansleem998-sketch</p>
+          </div>
+        </a>
+        <a href="https://medium.com/@abdelrhmansleem998" target="_blank" rel="noopener" class="contact-card glass">
+          <span class="c-icon me"><img src="icons/medium.svg" alt="" /></span>
+          <div>
+            <h4>Medium</h4>
+            <p>@abdelrhmansleem998</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>&lt;/&gt; Built with ❤️ by <strong>Abdelrhman Salim</strong></p>
+      <p class="footer-dev">© 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
