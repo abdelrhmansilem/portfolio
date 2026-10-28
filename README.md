@@ -32,7 +32,7 @@ portfolio/
 
 - Email: abdelrhmansleem998@gmail.com
 - LinkedIn: [abdelrhman-silem](https://www.linkedin.com/in/abdelrhman-silem-61050a384/)
-- GitHub: [abdelrhmansleem998-sketch](https://github.com/abdelrhmansleem998-sketch)
+- GitHub: [abdelrhmansilem](https://github.com/abdelrhmansilem)
 - Medium: [@abdelrhmansleem998](https://medium.com/@abdelrhmansleem998)
 - X: [@SilemAbdelrhman](https://x.com/SilemAbdelrhman)
 
