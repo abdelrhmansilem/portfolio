@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abdelrhman Salim — CyberSecurity & Software Engineering Student, Bug Bounty Hunter at HackerOne, Bugcrowd & Private Programs. Portfolio landing page." />
+  <meta name="description" content="Abdelrhman Salim — CyberSecurity & Software Engineering Student, Bug Bounty Hunter on HackerOne, Bugcrowd & private programs. Web security, Android reverse engineering and AI-assisted security tooling." />
   <meta name="author" content="Abdelrhman Salim" />
-  <meta name="keywords" content="CyberSecurity, Bug Bounty, HackerOne, Bugcrowd, Pentesting, OWASP, PortSwigger, HackTheBox, TryHackMe" />
+  <meta name="keywords" content="CyberSecurity, Bug Bounty, HackerOne, Bugcrowd, Pentesting, OWASP, PortSwigger, HackTheBox, TryHackMe, Reverse Engineering, Android Security, APK, Ghidra, Frida, AI Security" />
   <meta name="theme-color" content="#f8f7f3" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
@@ -56,6 +56,9 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#programs">Targets</a>
+        <a href="#reversing">Reversing</a>
+        <a href="#ai">AI</a>
         <a href="#practice">Practice</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -72,6 +75,9 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#programs">Targets</a>
+        <a href="#reversing">Reversing</a>
+        <a href="#ai">AI</a>
         <a href="#practice">Practice</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -99,8 +105,9 @@
         </h2>
         <p class="hero-desc">
           A 19-year-old Computer &amp; Information student at Suez Canal University,
-          hunting bugs on HackerOne, Bugcrowd &amp; private programs — and building
-          software with multiple programming languages.
+          hunting bugs on HackerOne, Bugcrowd &amp; private programs — reverse
+          engineering shipped Android and native binaries, and building AI-assisted
+          security tooling.
         </p>
 
         <div class="hero-socials">
@@ -145,6 +152,9 @@
           <p class="output">[+] HackerOne</p>
           <p class="output">[+] Bugcrowd</p>
           <p class="output">[+] Private Programs</p>
+
+          <p><span class="prompt">➜</span> <span class="cmd">cat focus.txt</span></p>
+          <p class="output">Web · API · Android RE · AI tooling</p>
 
           <p><span class="prompt">➜</span> <span class="cmd">nmap --skills</span></p>
           <p class="output status">Status: <span class="blink">Hunting bugs... ▌</span></p>
@@ -287,11 +297,216 @@
     </div>
   </section>
 
+  <!-- ================= TARGETS ================= -->
+  <section id="programs" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">#</span> Bug Bounty Targets</h2>
+      <p class="section-sub">Programs I hunt on — public bounty programs, VDPs and private engagements.</p>
+
+      <div class="work-grid">
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag h1">HackerOne</span></div>
+          <h3>Agoda</h3>
+          <p>CORS origin reflection with credentials on sensitive endpoints (card deletion, name change), plus a review of the two-tier JWT architecture.</p>
+          <div class="work-tags"><span>CORS</span><span>Access Control</span><span>JWT</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag h1">HackerOne</span></div>
+          <h3>Vodafone Egypt</h3>
+          <p>OAuth authorization code leaking to a third-party domain through the <code>x-dtreferer</code> header.</p>
+          <div class="work-tags"><span>OAuth</span><span>Token Leak</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag h1">HackerOne</span></div>
+          <h3>Arc</h3>
+          <p>Consensus signer without anti-equivocation state, an unauthenticated CL admin RPC, and pending-state blocklist gaps — each proven with a local harness (6/6 and 12/12).</p>
+          <div class="work-tags"><span>Consensus</span><span>RPC</span><span>Source Review</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag h1">HackerOne</span></div>
+          <h3>Syfe</h3>
+          <p>WAF bypass through an exposed origin IP with Laravel debug mode live in production, plus a referral IDOR leaking user PII.</p>
+          <div class="work-tags"><span>WAF Bypass</span><span>IDOR</span><span>Info Disclosure</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag bc">Bugcrowd</span></div>
+          <h3>Just Eat Takeaway</h3>
+          <p>XSS sanitizer bypass in the SSR fallback path of the PIE design system cookie-banner component.</p>
+          <div class="work-tags"><span>XSS</span><span>SSR</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag h1">HackerOne VDP</span></div>
+          <h3>McGraw-Hill</h3>
+          <p>Unauthenticated AEM JCR content disclosure through a <code>.xml</code> selector on a staging host.</p>
+          <div class="work-tags"><span>AEM</span><span>Content Disclosure</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag priv">Private</span></div>
+          <h3>Lexzur</h3>
+          <p>Cross-tenant BOLA leaking JWTs, CSRF + IDOR on the user edit endpoint, anonymous Confluence REST exposure, and an unauthenticated Swagger UI on the Lexa AI API.</p>
+          <div class="work-tags"><span>BOLA</span><span>CSRF</span><span>API Exposure</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag priv">Private</span></div>
+          <h3>Khatwetk</h3>
+          <p>CORS wildcard with credentials, a publicly readable S3 bucket, a DOM-based open redirect, JWT stored in localStorage, and payment endpoint findings.</p>
+          <div class="work-tags"><span>CORS</span><span>S3</span><span>Open Redirect</span></div>
+        </article>
+
+        <article class="work-card glass">
+          <div class="work-head"><span class="target-tag priv">Private</span></div>
+          <h3>FCI</h3>
+          <p>Unauthenticated API exposing instructor PII.</p>
+          <div class="work-tags"><span>Broken Auth</span><span>PII</span></div>
+        </article>
+      </div>
+
+      <h3 class="skill-group-title">🧭 Programs &amp; platforms</h3>
+      <div class="sec-chips">
+        <span class="chip">HackerOne</span>
+        <span class="chip">Bugcrowd</span>
+        <span class="chip">Private engagements</span>
+        <span class="chip soft">Aiven</span>
+        <span class="chip soft">Auth0 by Okta</span>
+        <span class="chip soft">Mattermost</span>
+        <span class="chip soft">Netflix</span>
+        <span class="chip soft">Epic Games</span>
+        <span class="chip soft">Vercel</span>
+        <span class="chip soft">Box</span>
+        <span class="chip soft">Coupang</span>
+        <span class="chip soft">Expensify</span>
+        <span class="chip soft">Nebius</span>
+        <span class="chip soft">Zapier</span>
+        <span class="chip soft">Whatnot</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVERSE ENGINEERING ================= -->
+  <section id="reversing" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">#</span> Reverse Engineering</h2>
+      <p class="section-sub">Taking shipped binaries apart — Android first, native code where the answer lives there.</p>
+
+      <div class="work-grid">
+        <article class="work-card glass">
+          <div class="icon-box">📱</div>
+          <h3>Android APK reverse engineering</h3>
+          <p>jadx and apktool against a production game client: 10,385 classes, 6,721 DEX files and 10,859 resources mapped, then swept for credentials and internal endpoints.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🧩</div>
+          <h3>Native binary analysis</h3>
+          <p>Ghidra headless analysis and decompilation on a 493 MB Unreal <code>libUnreal.so</code>, with symbol and property sweeps for engine configuration and credential material.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">⚙️</div>
+          <h3>Runtime instrumentation</h3>
+          <p>Frida on a physical device to dump live configuration and observe API traffic where static analysis dead-ends.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🔐</div>
+          <h3>Signing &amp; provenance</h3>
+          <p>APK Signing Block parsing for v2/v3 certificates, so a build is proven vendor-signed before it is trusted, plus pinning checks against intercepted traffic.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🔎</div>
+          <h3>Secret triage</h3>
+          <p>121 base64 literals decoded and leaked API keys validated with read-only oracles — a key that unlocks nothing is dropped instead of reported.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🧰</div>
+          <h3>Toolchain</h3>
+          <p>adb · apktool · uber-apk-signer · jadx · Ghidra · Frida · Python for the glue that ties them together.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AI ================= -->
+  <section id="ai" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">#</span> AI &amp; Automation</h2>
+      <p class="section-sub">Models as a force multiplier — the machine proposes, evidence decides.</p>
+
+      <div class="work-grid">
+        <article class="work-card glass">
+          <div class="icon-box">🤖</div>
+          <h3>AI-assisted hunting pipeline</h3>
+          <p>Recon → triage → validation driven by agents, with hard gates: every candidate still has to pass a control-vs-attack diff and a replay before it is called a finding.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">💬</div>
+          <h3>VirusAi.py</h3>
+          <p>Telegram security bot powered by Gemini, answering on-demand recon and tooling questions.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🕷️</div>
+          <h3>AI XSS scanner</h3>
+          <p>mitmproxy interception feeding a Groq-hosted model that classifies reflected contexts instead of pattern-matching payloads.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🔌</div>
+          <h3>Custom MCP tooling</h3>
+          <p>jadx, Ghidra and Android-device MCP servers wired into the agent, so the model drives real tooling instead of guessing at output.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🧪</div>
+          <h3>LLM application security</h3>
+          <p>Prompt injection, indirect injection through documents, and agentic tool-use abuse — my current research direction.</p>
+        </article>
+
+        <article class="work-card glass">
+          <div class="icon-box">🧠</div>
+          <h3>Rules over vibes</h3>
+          <p>Writing the agent contracts and gates — scope lock, finder ≠ validator, evidence-first — that keep AI output usable.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= PRACTICE ================= -->
-  <section id="practice" class="section">
+  <section id="practice" class="section section-alt">
     <div class="container">
       <h2 class="section-title"><span class="accent">#</span> Learning &amp; Practice</h2>
       <p class="section-sub">Platforms where I train, practice CTFs and sharpen my skills.</p>
+
+      <h3 class="skill-group-title">📜 Certifications</h3>
+      <div class="work-grid">
+        <article class="work-card glass">
+          <span class="cert-issuer">Google · Coursera</span>
+          <h3>Google Cybersecurity Professional Certificate</h3>
+          <p>Eight-course professional certificate covering security foundations, network security, Linux and SQL, threats and vulnerabilities, and incident detection and response.</p>
+        </article>
+
+        <article class="work-card glass">
+          <span class="cert-issuer">McKinsey.org</span>
+          <h3>McKinsey Forward Program</h3>
+          <p>McKinsey's Forward program on structured problem solving, communication and digital-analytical skills for early-career professionals.</p>
+        </article>
+
+        <article class="work-card glass">
+          <span class="cert-issuer">Harvard University</span>
+          <h3>CS50x — Introduction to Computer Science</h3>
+          <p>Algorithms, data structures, memory, Python, SQL and web development — CS50's core computer science curriculum.</p>
+        </article>
+      </div>
 
       <div class="practice-grid">
         <div class="practice-card glass">

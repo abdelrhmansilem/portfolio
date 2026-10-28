@@ -252,7 +252,7 @@
   var navLinks = Array.prototype.slice.call(
     document.querySelectorAll('.nav-links a, .mobile-menu a')
   );
-  var sections = ['home', 'about', 'skills', 'practice', 'contact']
+  var sections = ['home', 'about', 'skills', 'programs', 'reversing', 'ai', 'practice', 'contact']
     .map(function (id) { return document.getElementById(id); })
     .filter(Boolean);
 
